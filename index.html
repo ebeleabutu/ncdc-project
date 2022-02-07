@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NCDC Document</title>
+    <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+   <section class="section-center">
+     <p class ="alert">patient's details added successfully!!!</p>
+    <form class="input-form">
+        <div class="first-name form">
+        <label for="">first-name</label>
+        <input requierd type="text" name="first-name" id="first-name">
+        </div>
+        <div class="last-name form">
+        <label for="">last-name</label>
+        <input requierd type="text" name="last-name" id="last-name">
+        </div>
+        <div class="email form">
+            <label for ="">email address:</label>
+            <input required type="email" name="email" id="email">
+            </div>
+            <div class="genger form">
+            <label for="">Gender:</label>
+            <select required="male,famele" id="gender">
+                <option value="">select your gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+        </div>
+        <div class="travel form checkbox">
+        <input type="checkbox" name="travel" id="travel">
+        <span for="checkbox">
+             recently came 
+             into nigeria within the last 14days?
+        </span>
+        </div>
+        <div class="submit form">
+            <button type="submit" class="submit-btn">submit</button>
+        </div>
+    </form>
+    <!--records-->
+    <table class="list" id="output-tab">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email adress</th>
+                <th>Gender</th>
+                <th>Came to nigeria withen the last 14 days</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class =" table-body">
+
+        </tbody>
+    </table>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
